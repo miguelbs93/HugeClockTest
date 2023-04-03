@@ -1,0 +1,1083 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD00351129D06230000F7EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00351029D06230000F7EE0 /* AppDelegate.swift */; };
+		AD00351329D06230000F7EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00351229D06230000F7EE0 /* SceneDelegate.swift */; };
+		AD00351B29D06230000F7EE0 /* HugeClock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD00351929D06230000F7EE0 /* HugeClock.xcdatamodeld */; };
+		AD00351D29D06238000F7EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD00351C29D06238000F7EE0 /* Assets.xcassets */; };
+		AD00352029D06238000F7EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD00351E29D06238000F7EE0 /* LaunchScreen.storyboard */; };
+		AD00354929D06297000F7EE0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00354829D06297000F7EE0 /* TimerViewController.swift */; };
+		AD00354B29D062A7000F7EE0 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00354A29D062A7000F7EE0 /* TimerViewModel.swift */; };
+		AD00355C29D066C6000F7EE0 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00355B29D066C6000F7EE0 /* RemindersViewController.swift */; };
+		AD00355E29D066D1000F7EE0 /* RemindersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00355D29D066D1000F7EE0 /* RemindersViewModel.swift */; };
+		AD00356029D06840000F7EE0 /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00355F29D06840000F7EE0 /* WorldClockViewController.swift */; };
+		AD00356229D0684F000F7EE0 /* WorldClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00356129D0684F000F7EE0 /* WorldClockViewModel.swift */; };
+		AD00357129D0BCCE000F7EE0 /* TimerDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00356B29D0BCCE000F7EE0 /* TimerDB+CoreDataClass.swift */; };
+		AD00357229D0BCCE000F7EE0 /* TimerDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00356C29D0BCCE000F7EE0 /* TimerDB+CoreDataProperties.swift */; };
+		AD00357329D0BCCE000F7EE0 /* ReminderDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00356D29D0BCCE000F7EE0 /* ReminderDB+CoreDataClass.swift */; };
+		AD00357429D0BCCE000F7EE0 /* ReminderDB +CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00356E29D0BCCE000F7EE0 /* ReminderDB +CoreDataProperties.swift */; };
+		AD00357529D0BCCE000F7EE0 /* ClockDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00356F29D0BCCE000F7EE0 /* ClockDB+CoreDataClass.swift */; };
+		AD00357629D0BCCE000F7EE0 /* Clock+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00357029D0BCCE000F7EE0 /* Clock+CoreDataProperties.swift */; };
+		AD00357F29D0D733000F7EE0 /* UIFont+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00357E29D0D733000F7EE0 /* UIFont+Extras.swift */; };
+		AD00358729D0DC1D000F7EE0 /* DefaultCellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00358629D0DC1D000F7EE0 /* DefaultCellIdentifiable.swift */; };
+		AD3BD42929D0E6FF000C001F /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD42829D0E6FF000C001F /* ReminderCell.swift */; };
+		AD3BD43029D22B53000C001F /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD42F29D22B53000C001F /* DatePickerView.swift */; };
+		AD3BD43429D2325A000C001F /* UIColor+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD43329D2325A000C001F /* UIColor+Extras.swift */; };
+		AD3BD44129D24A17000C001F /* TimersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD44029D24A17000C001F /* TimersStore.swift */; };
+		AD3BD44429D24A87000C001F /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD44329D24A87000C001F /* TimerModel.swift */; };
+		AD3BD44629D24A9A000C001F /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD44529D24A9A000C001F /* Reminder.swift */; };
+		AD3BD44829D24AA6000C001F /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD44729D24AA6000C001F /* Clock.swift */; };
+		AD3BD44A29D24B12000C001F /* RemindersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD44929D24B12000C001F /* RemindersStore.swift */; };
+		AD3BD44C29D24B56000C001F /* ClocksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD44B29D24B56000C001F /* ClocksStore.swift */; };
+		AD3BD44F29D24D9B000C001F /* CoreData+TimersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD44E29D24D9B000C001F /* CoreData+TimersStore.swift */; };
+		AD3BD45129D24DA8000C001F /* CoreData+RemindersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD45029D24DA8000C001F /* CoreData+RemindersStore.swift */; };
+		AD3BD45329D24DB6000C001F /* CoreData+ClocksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD45229D24DB6000C001F /* CoreData+ClocksStore.swift */; };
+		AD754A8329D37C9C0096D43C /* UIControl+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD754A8229D37C9C0096D43C /* UIControl+Combine.swift */; };
+		AD754A8929D4A0860096D43C /* Int+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD754A8829D4A0860096D43C /* Int+Extras.swift */; };
+		AD754A8C29D4AED80096D43C /* DateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD754A8B29D4AED80096D43C /* DateComponent.swift */; };
+		AD754A9129D4C3870096D43C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD754A9029D4C3870096D43C /* City.swift */; };
+		AD754A9A29D4C6ED0096D43C /* ClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD754A9929D4C6ED0096D43C /* ClockCell.swift */; };
+		AD754A9F29D4C7250096D43C /* CitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD754A9E29D4C7250096D43C /* CitiesListViewModel.swift */; };
+		AD754AA229D4C73C0096D43C /* CitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD754AA129D4C73C0096D43C /* CitiesListViewController.swift */; };
+		AD754AA429D4C9910096D43C /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD754AA329D4C9910096D43C /* CityCell.swift */; };
+		AD8AC81429D83E6B00550C50 /* MainTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC81329D83E6B00550C50 /* MainTabItem.swift */; };
+		AD8AC81829D84B0400550C50 /* TabItem+Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC81729D84B0400550C50 /* TabItem+Clock.swift */; };
+		AD8AC81A29D84B3500550C50 /* TabItem+Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC81929D84B3500550C50 /* TabItem+Reminders.swift */; };
+		AD8AC81C29D84B6500550C50 /* TabItem+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC81B29D84B6500550C50 /* TabItem+Timer.swift */; };
+		AD8AC82129D84DB400550C50 /* MainCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC82029D84DB400550C50 /* MainCoordinatorFactory.swift */; };
+		AD8AC82529D882DB00550C50 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC82429D882DB00550C50 /* TabBarCoordinator.swift */; };
+		AD8AC83329D8B0BE00550C50 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC83229D8B0BE00550C50 /* AlertManager.swift */; };
+		AD8AC83B29D9C87F00550C50 /* CDPulisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC83A29D9C87F00550C50 /* CDPulisher.swift */; };
+		AD8AC84029DA1E2E00550C50 /* NotificationSchedulingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC83F29DA1E2E00550C50 /* NotificationSchedulingManager.swift */; };
+		AD8AC84229DA225400550C50 /* Date+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC84129DA225400550C50 /* Date+Extras.swift */; };
+		AD8AC86E29DA3C3500550C50 /* UIViewController+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC86D29DA3C3500550C50 /* UIViewController+Extras.swift */; };
+		AD8AC87029DA450000550C50 /* TimerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC86F29DA450000550C50 /* TimerViewModelTests.swift */; };
+		AD8AC87329DA463F00550C50 /* TimerStoreMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC87229DA463F00550C50 /* TimerStoreMockup.swift */; };
+		AD8AC8B329DA7C3E00550C50 /* RemindersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AC8B229DA7C3E00550C50 /* RemindersViewModelTests.swift */; };
+		ADA9D3C429DA90DA0006092D /* RemindersStoreMockUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA9D3C329DA90DA0006092D /* RemindersStoreMockUp.swift */; };
+		ADA9D3C729DA9A790006092D /* WorldClockViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA9D3C629DA9A790006092D /* WorldClockViewModelTests.swift */; };
+		ADA9D3C929DA9AF10006092D /* WorldClockStoreMockUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA9D3C829DA9AF10006092D /* WorldClockStoreMockUp.swift */; };
+		ADAA019529D5F802006D67B8 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA019429D5F802006D67B8 /* AddReminderViewController.swift */; };
+		ADC7F77729D642CE00B4DE0E /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7F77629D642CE00B4DE0E /* CoreDataHelpers.swift */; };
+		ADC7F77A29D70E3700B4DE0E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7F77929D70E3700B4DE0E /* Coordinator.swift */; };
+		ADC7F77C29D70F7B00B4DE0E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7F77B29D70F7B00B4DE0E /* MainCoordinator.swift */; };
+		ADC7F77E29D7196B00B4DE0E /* MainAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7F77D29D7196B00B4DE0E /* MainAppDependencies.swift */; };
+		ADC7F78029D7253E00B4DE0E /* RemindersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7F77F29D7253E00B4DE0E /* RemindersCoordinator.swift */; };
+		ADC7F78229D726A200B4DE0E /* WorldClockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7F78129D726A200B4DE0E /* WorldClockCoordinator.swift */; };
+		ADC7F78429D726B600B4DE0E /* TimerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC7F78329D726B600B4DE0E /* TimerCoordinator.swift */; };
+		ADCB82CA29D5FCAC00782589 /* AddReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB82C929D5FCAC00782589 /* AddReminderViewModel.swift */; };
+		ADCB82CC29D626B700782589 /* CitiesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB82CB29D626B700782589 /* CitiesStore.swift */; };
+		ADCB82CE29D6272A00782589 /* CitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB82CD29D6272A00782589 /* CitiesService.swift */; };
+		ADCB82D029D62EB600782589 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB82CF29D62EB600782589 /* CoreDataStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD00352729D06239000F7EE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD00350529D06230000F7EE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD00350C29D06230000F7EE0;
+			remoteInfo = HugeClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD00350D29D06230000F7EE0 /* HugeClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugeClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD00351029D06230000F7EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD00351229D06230000F7EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD00351A29D06230000F7EE0 /* HugeClock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HugeClock.xcdatamodel; sourceTree = "<group>"; };
+		AD00351C29D06238000F7EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD00351F29D06238000F7EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD00352129D06238000F7EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD00352629D06239000F7EE0 /* HugeClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugeClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD00354829D06297000F7EE0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		AD00354A29D062A7000F7EE0 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		AD00355B29D066C6000F7EE0 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		AD00355D29D066D1000F7EE0 /* RemindersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewModel.swift; sourceTree = "<group>"; };
+		AD00355F29D06840000F7EE0 /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		AD00356129D0684F000F7EE0 /* WorldClockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewModel.swift; sourceTree = "<group>"; };
+		AD00356B29D0BCCE000F7EE0 /* TimerDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD00356C29D0BCCE000F7EE0 /* TimerDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD00356D29D0BCCE000F7EE0 /* ReminderDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD00356E29D0BCCE000F7EE0 /* ReminderDB +CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderDB +CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD00356F29D0BCCE000F7EE0 /* ClockDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClockDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD00357029D0BCCE000F7EE0 /* Clock+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clock+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD00357E29D0D733000F7EE0 /* UIFont+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extras.swift"; sourceTree = "<group>"; };
+		AD00358629D0DC1D000F7EE0 /* DefaultCellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCellIdentifiable.swift; sourceTree = "<group>"; };
+		AD3BD42829D0E6FF000C001F /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
+		AD3BD42F29D22B53000C001F /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		AD3BD43329D2325A000C001F /* UIColor+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extras.swift"; sourceTree = "<group>"; };
+		AD3BD44029D24A17000C001F /* TimersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersStore.swift; sourceTree = "<group>"; };
+		AD3BD44329D24A87000C001F /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		AD3BD44529D24A9A000C001F /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		AD3BD44729D24AA6000C001F /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		AD3BD44929D24B12000C001F /* RemindersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersStore.swift; sourceTree = "<group>"; };
+		AD3BD44B29D24B56000C001F /* ClocksStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClocksStore.swift; sourceTree = "<group>"; };
+		AD3BD44E29D24D9B000C001F /* CoreData+TimersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData+TimersStore.swift"; sourceTree = "<group>"; };
+		AD3BD45029D24DA8000C001F /* CoreData+RemindersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData+RemindersStore.swift"; sourceTree = "<group>"; };
+		AD3BD45229D24DB6000C001F /* CoreData+ClocksStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData+ClocksStore.swift"; sourceTree = "<group>"; };
+		AD754A8229D37C9C0096D43C /* UIControl+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Combine.swift"; sourceTree = "<group>"; };
+		AD754A8829D4A0860096D43C /* Int+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extras.swift"; sourceTree = "<group>"; };
+		AD754A8B29D4AED80096D43C /* DateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponent.swift; sourceTree = "<group>"; };
+		AD754A9029D4C3870096D43C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		AD754A9929D4C6ED0096D43C /* ClockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockCell.swift; sourceTree = "<group>"; };
+		AD754A9E29D4C7250096D43C /* CitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewModel.swift; sourceTree = "<group>"; };
+		AD754AA129D4C73C0096D43C /* CitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewController.swift; sourceTree = "<group>"; };
+		AD754AA329D4C9910096D43C /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		AD8AC81329D83E6B00550C50 /* MainTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItem.swift; sourceTree = "<group>"; };
+		AD8AC81729D84B0400550C50 /* TabItem+Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabItem+Clock.swift"; sourceTree = "<group>"; };
+		AD8AC81929D84B3500550C50 /* TabItem+Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabItem+Reminders.swift"; sourceTree = "<group>"; };
+		AD8AC81B29D84B6500550C50 /* TabItem+Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabItem+Timer.swift"; sourceTree = "<group>"; };
+		AD8AC82029D84DB400550C50 /* MainCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorFactory.swift; sourceTree = "<group>"; };
+		AD8AC82429D882DB00550C50 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		AD8AC83229D8B0BE00550C50 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		AD8AC83A29D9C87F00550C50 /* CDPulisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPulisher.swift; sourceTree = "<group>"; };
+		AD8AC83F29DA1E2E00550C50 /* NotificationSchedulingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSchedulingManager.swift; sourceTree = "<group>"; };
+		AD8AC84129DA225400550C50 /* Date+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extras.swift"; sourceTree = "<group>"; };
+		AD8AC86D29DA3C3500550C50 /* UIViewController+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extras.swift"; sourceTree = "<group>"; };
+		AD8AC86F29DA450000550C50 /* TimerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModelTests.swift; sourceTree = "<group>"; };
+		AD8AC87229DA463F00550C50 /* TimerStoreMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStoreMockup.swift; sourceTree = "<group>"; };
+		AD8AC8B229DA7C3E00550C50 /* RemindersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewModelTests.swift; sourceTree = "<group>"; };
+		ADA9D3C329DA90DA0006092D /* RemindersStoreMockUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersStoreMockUp.swift; sourceTree = "<group>"; };
+		ADA9D3C629DA9A790006092D /* WorldClockViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewModelTests.swift; sourceTree = "<group>"; };
+		ADA9D3C829DA9AF10006092D /* WorldClockStoreMockUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockStoreMockUp.swift; sourceTree = "<group>"; };
+		ADAA019429D5F802006D67B8 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
+		ADC7F77629D642CE00B4DE0E /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
+		ADC7F77929D70E3700B4DE0E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		ADC7F77B29D70F7B00B4DE0E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		ADC7F77D29D7196B00B4DE0E /* MainAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppDependencies.swift; sourceTree = "<group>"; };
+		ADC7F77F29D7253E00B4DE0E /* RemindersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCoordinator.swift; sourceTree = "<group>"; };
+		ADC7F78129D726A200B4DE0E /* WorldClockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockCoordinator.swift; sourceTree = "<group>"; };
+		ADC7F78329D726B600B4DE0E /* TimerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCoordinator.swift; sourceTree = "<group>"; };
+		ADCB82C929D5FCAC00782589 /* AddReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewModel.swift; sourceTree = "<group>"; };
+		ADCB82CB29D626B700782589 /* CitiesStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesStore.swift; sourceTree = "<group>"; };
+		ADCB82CD29D6272A00782589 /* CitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesService.swift; sourceTree = "<group>"; };
+		ADCB82CF29D62EB600782589 /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD00350A29D06230000F7EE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00352329D06239000F7EE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD00350429D06230000F7EE0 = {
+			isa = PBXGroup;
+			children = (
+				AD00350F29D06230000F7EE0 /* HugeClock */,
+				AD00352929D06239000F7EE0 /* HugeClockTests */,
+				AD00350E29D06230000F7EE0 /* Products */,
+				AD8AC8AF29DA6AF300550C50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD00350E29D06230000F7EE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD00350D29D06230000F7EE0 /* HugeClock.app */,
+				AD00352629D06239000F7EE0 /* HugeClockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD00350F29D06230000F7EE0 /* HugeClock */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC84329DA2D8400550C50 /* Modules */,
+				AD00351029D06230000F7EE0 /* AppDelegate.swift */,
+				AD00351229D06230000F7EE0 /* SceneDelegate.swift */,
+				AD00351C29D06238000F7EE0 /* Assets.xcassets */,
+				AD00351E29D06238000F7EE0 /* LaunchScreen.storyboard */,
+				AD00352129D06238000F7EE0 /* Info.plist */,
+			);
+			path = HugeClock;
+			sourceTree = "<group>";
+		};
+		AD00352929D06239000F7EE0 /* HugeClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC87529DA4B3C00550C50 /* Reminders */,
+				AD8AC87429DA4B3400550C50 /* WorldClock */,
+				AD8AC87129DA462F00550C50 /* Timer */,
+			);
+			path = HugeClockTests;
+			sourceTree = "<group>";
+		};
+		AD00358529D0DC11000F7EE0 /* DefaultCellIdentifiable */ = {
+			isa = PBXGroup;
+			children = (
+				AD00358629D0DC1D000F7EE0 /* DefaultCellIdentifiable.swift */,
+			);
+			path = DefaultCellIdentifiable;
+			sourceTree = "<group>";
+		};
+		AD754A8A29D4AEC80096D43C /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BD42F29D22B53000C001F /* DatePickerView.swift */,
+				AD754A8B29D4AED80096D43C /* DateComponent.swift */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		AD754A9829D4C6D30096D43C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD754A9929D4C6ED0096D43C /* ClockCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD754A9B29D4C7050096D43C /* CountriesList */ = {
+			isa = PBXGroup;
+			children = (
+				AD754A9E29D4C7250096D43C /* CitiesListViewModel.swift */,
+				AD754AA129D4C73C0096D43C /* CitiesListViewController.swift */,
+				AD754AA329D4C9910096D43C /* CityCell.swift */,
+			);
+			path = CountriesList;
+			sourceTree = "<group>";
+		};
+		AD8AC83E29DA1E1B00550C50 /* NotificationSchedulingManager */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC83F29DA1E2E00550C50 /* NotificationSchedulingManager.swift */,
+			);
+			path = NotificationSchedulingManager;
+			sourceTree = "<group>";
+		};
+		AD8AC84329DA2D8400550C50 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ADA9D3CA29DAA0CF0006092D /* Stories */,
+				AD8AC85E29DA309000550C50 /* Views */,
+				AD8AC85A29DA304400550C50 /* Patterns */,
+				AD8AC85629DA2FBA00550C50 /* Core */,
+				AD8AC85129DA2ED600550C50 /* MainApp */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AD8AC84429DA2D8900550C50 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC84929DA2DCB00550C50 /* Coordinator */,
+				AD8AC84729DA2DA200550C50 /* ViewControllers */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		AD8AC84529DA2D8E00550C50 /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC84F29DA2E8E00550C50 /* Coordinators */,
+				AD754A9829D4C6D30096D43C /* Views */,
+				AD8AC84E29DA2E6E00550C50 /* ViewControllers */,
+			);
+			path = WorldClock;
+			sourceTree = "<group>";
+		};
+		AD8AC84629DA2D9500550C50 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC84D29DA2E4700550C50 /* Views */,
+				AD8AC84B29DA2E2200550C50 /* ViewControllers */,
+				AD8AC84A29DA2E0B00550C50 /* Coordinator */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		AD8AC84729DA2DA200550C50 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC84829DA2DAA00550C50 /* TimerViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD8AC84829DA2DAA00550C50 /* TimerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD00354829D06297000F7EE0 /* TimerViewController.swift */,
+				AD00354A29D062A7000F7EE0 /* TimerViewModel.swift */,
+			);
+			path = TimerViewController;
+			sourceTree = "<group>";
+		};
+		AD8AC84929DA2DCB00550C50 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC81B29D84B6500550C50 /* TabItem+Timer.swift */,
+				ADC7F78329D726B600B4DE0E /* TimerCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AD8AC84A29DA2E0B00550C50 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				ADC7F77F29D7253E00B4DE0E /* RemindersCoordinator.swift */,
+				AD8AC81929D84B3500550C50 /* TabItem+Reminders.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AD8AC84B29DA2E2200550C50 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC84C29DA2E3C00550C50 /* Reminders */,
+				ADAA019329D5F7C9006D67B8 /* AddReminder */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD8AC84C29DA2E3C00550C50 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				AD00355B29D066C6000F7EE0 /* RemindersViewController.swift */,
+				AD00355D29D066D1000F7EE0 /* RemindersViewModel.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		AD8AC84D29DA2E4700550C50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BD42829D0E6FF000C001F /* ReminderCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD8AC84E29DA2E6E00550C50 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC85029DA2EAC00550C50 /* WorldClock */,
+				AD754A9B29D4C7050096D43C /* CountriesList */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD8AC84F29DA2E8E00550C50 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				ADC7F78129D726A200B4DE0E /* WorldClockCoordinator.swift */,
+				AD8AC81729D84B0400550C50 /* TabItem+Clock.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		AD8AC85029DA2EAC00550C50 /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				AD00355F29D06840000F7EE0 /* WorldClockViewController.swift */,
+				AD00356129D0684F000F7EE0 /* WorldClockViewModel.swift */,
+			);
+			path = WorldClock;
+			sourceTree = "<group>";
+		};
+		AD8AC85129DA2ED600550C50 /* MainApp */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC85929DA301900550C50 /* Coordinators */,
+				AD8AC85229DA2EDE00550C50 /* Dependencies */,
+			);
+			path = MainApp;
+			sourceTree = "<group>";
+		};
+		AD8AC85229DA2EDE00550C50 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				ADC7F77D29D7196B00B4DE0E /* MainAppDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		AD8AC85629DA2FBA00550C50 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC86C29DA32BC00550C50 /* Services */,
+				AD8AC86B29DA32A800550C50 /* CoreData+Stores */,
+				AD8AC86529DA319700550C50 /* Models */,
+				AD8AC86129DA312F00550C50 /* Stores */,
+				AD00358529D0DC11000F7EE0 /* DefaultCellIdentifiable */,
+				AD8AC85D29DA306700550C50 /* Publishers */,
+				AD8AC85C29DA305B00550C50 /* Extensions */,
+				AD8AC85829DA2FE700550C50 /* Coordinators */,
+				AD8AC85729DA2FBF00550C50 /* CoreData */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AD8AC85729DA2FBF00550C50 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AD00351929D06230000F7EE0 /* HugeClock.xcdatamodeld */,
+				ADCB82CF29D62EB600782589 /* CoreDataStore.swift */,
+				ADC7F77629D642CE00B4DE0E /* CoreDataHelpers.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AD8AC85829DA2FE700550C50 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC82429D882DB00550C50 /* TabBarCoordinator.swift */,
+				ADC7F77929D70E3700B4DE0E /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		AD8AC85929DA301900550C50 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC81329D83E6B00550C50 /* MainTabItem.swift */,
+				AD8AC82029D84DB400550C50 /* MainCoordinatorFactory.swift */,
+				ADC7F77B29D70F7B00B4DE0E /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		AD8AC85A29DA304400550C50 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC83E29DA1E1B00550C50 /* NotificationSchedulingManager */,
+				AD8AC85B29DA304A00550C50 /* AlertManager */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		AD8AC85B29DA304A00550C50 /* AlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC83229D8B0BE00550C50 /* AlertManager.swift */,
+			);
+			path = AlertManager;
+			sourceTree = "<group>";
+		};
+		AD8AC85C29DA305B00550C50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD00357E29D0D733000F7EE0 /* UIFont+Extras.swift */,
+				AD3BD43329D2325A000C001F /* UIColor+Extras.swift */,
+				AD754A8829D4A0860096D43C /* Int+Extras.swift */,
+				AD754A8229D37C9C0096D43C /* UIControl+Combine.swift */,
+				AD8AC84129DA225400550C50 /* Date+Extras.swift */,
+				AD8AC86D29DA3C3500550C50 /* UIViewController+Extras.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AD8AC85D29DA306700550C50 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC83A29D9C87F00550C50 /* CDPulisher.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
+		AD8AC85E29DA309000550C50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD754A8A29D4AEC80096D43C /* DatePickerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD8AC86129DA312F00550C50 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BD44929D24B12000C001F /* RemindersStore.swift */,
+				ADCB82CB29D626B700782589 /* CitiesStore.swift */,
+				AD3BD44B29D24B56000C001F /* ClocksStore.swift */,
+				AD3BD44029D24A17000C001F /* TimersStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		AD8AC86529DA319700550C50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC86A29DA325B00550C50 /* Store */,
+				AD8AC86629DA31A800550C50 /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD8AC86629DA31A800550C50 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AD00356D29D0BCCE000F7EE0 /* ReminderDB+CoreDataClass.swift */,
+				AD00356E29D0BCCE000F7EE0 /* ReminderDB +CoreDataProperties.swift */,
+				AD00356F29D0BCCE000F7EE0 /* ClockDB+CoreDataClass.swift */,
+				AD00357029D0BCCE000F7EE0 /* Clock+CoreDataProperties.swift */,
+				AD00356B29D0BCCE000F7EE0 /* TimerDB+CoreDataClass.swift */,
+				AD00356C29D0BCCE000F7EE0 /* TimerDB+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AD8AC86A29DA325B00550C50 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BD44529D24A9A000C001F /* Reminder.swift */,
+				AD3BD44329D24A87000C001F /* TimerModel.swift */,
+				AD3BD44729D24AA6000C001F /* Clock.swift */,
+				AD754A9029D4C3870096D43C /* City.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		AD8AC86B29DA32A800550C50 /* CoreData+Stores */ = {
+			isa = PBXGroup;
+			children = (
+				AD3BD45229D24DB6000C001F /* CoreData+ClocksStore.swift */,
+				AD3BD44E29D24D9B000C001F /* CoreData+TimersStore.swift */,
+				AD3BD45029D24DA8000C001F /* CoreData+RemindersStore.swift */,
+			);
+			path = "CoreData+Stores";
+			sourceTree = "<group>";
+		};
+		AD8AC86C29DA32BC00550C50 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ADCB82CD29D6272A00782589 /* CitiesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AD8AC87129DA462F00550C50 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC86F29DA450000550C50 /* TimerViewModelTests.swift */,
+				AD8AC87229DA463F00550C50 /* TimerStoreMockup.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		AD8AC87429DA4B3400550C50 /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				ADA9D3C629DA9A790006092D /* WorldClockViewModelTests.swift */,
+				ADA9D3C829DA9AF10006092D /* WorldClockStoreMockUp.swift */,
+			);
+			path = WorldClock;
+			sourceTree = "<group>";
+		};
+		AD8AC87529DA4B3C00550C50 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC8B229DA7C3E00550C50 /* RemindersViewModelTests.swift */,
+				ADA9D3C329DA90DA0006092D /* RemindersStoreMockUp.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		AD8AC8AF29DA6AF300550C50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA9D3CA29DAA0CF0006092D /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				AD8AC84629DA2D9500550C50 /* Reminders */,
+				AD8AC84529DA2D8E00550C50 /* WorldClock */,
+				AD8AC84429DA2D8900550C50 /* Timer */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		ADAA019329D5F7C9006D67B8 /* AddReminder */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA019429D5F802006D67B8 /* AddReminderViewController.swift */,
+				ADCB82C929D5FCAC00782589 /* AddReminderViewModel.swift */,
+			);
+			path = AddReminder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD00350C29D06230000F7EE0 /* HugeClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD00353A29D06239000F7EE0 /* Build configuration list for PBXNativeTarget "HugeClock" */;
+			buildPhases = (
+				AD00350929D06230000F7EE0 /* Sources */,
+				AD00350A29D06230000F7EE0 /* Frameworks */,
+				AD00350B29D06230000F7EE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HugeClock;
+			packageProductDependencies = (
+			);
+			productName = HugeClock;
+			productReference = AD00350D29D06230000F7EE0 /* HugeClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD00352529D06239000F7EE0 /* HugeClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD00353D29D06239000F7EE0 /* Build configuration list for PBXNativeTarget "HugeClockTests" */;
+			buildPhases = (
+				AD00352229D06239000F7EE0 /* Sources */,
+				AD00352329D06239000F7EE0 /* Frameworks */,
+				AD00352429D06239000F7EE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD00352829D06239000F7EE0 /* PBXTargetDependency */,
+			);
+			name = HugeClockTests;
+			packageProductDependencies = (
+			);
+			productName = HugeClockTests;
+			productReference = AD00352629D06239000F7EE0 /* HugeClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD00350529D06230000F7EE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AD00350C29D06230000F7EE0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AD00352529D06239000F7EE0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AD00350C29D06230000F7EE0;
+					};
+				};
+			};
+			buildConfigurationList = AD00350829D06230000F7EE0 /* Build configuration list for PBXProject "HugeClock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD00350429D06230000F7EE0;
+			packageReferences = (
+			);
+			productRefGroup = AD00350E29D06230000F7EE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD00350C29D06230000F7EE0 /* HugeClock */,
+				AD00352529D06239000F7EE0 /* HugeClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD00350B29D06230000F7EE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD00352029D06238000F7EE0 /* LaunchScreen.storyboard in Resources */,
+				AD00351D29D06238000F7EE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00352429D06239000F7EE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD00350929D06230000F7EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAA019529D5F802006D67B8 /* AddReminderViewController.swift in Sources */,
+				AD754A8929D4A0860096D43C /* Int+Extras.swift in Sources */,
+				AD3BD44F29D24D9B000C001F /* CoreData+TimersStore.swift in Sources */,
+				AD00357529D0BCCE000F7EE0 /* ClockDB+CoreDataClass.swift in Sources */,
+				AD8AC83B29D9C87F00550C50 /* CDPulisher.swift in Sources */,
+				AD00354929D06297000F7EE0 /* TimerViewController.swift in Sources */,
+				AD8AC81429D83E6B00550C50 /* MainTabItem.swift in Sources */,
+				AD8AC86E29DA3C3500550C50 /* UIViewController+Extras.swift in Sources */,
+				AD00357329D0BCCE000F7EE0 /* ReminderDB+CoreDataClass.swift in Sources */,
+				AD754A9A29D4C6ED0096D43C /* ClockCell.swift in Sources */,
+				ADCB82CE29D6272A00782589 /* CitiesService.swift in Sources */,
+				AD3BD42929D0E6FF000C001F /* ReminderCell.swift in Sources */,
+				AD3BD44829D24AA6000C001F /* Clock.swift in Sources */,
+				AD00355E29D066D1000F7EE0 /* RemindersViewModel.swift in Sources */,
+				ADC7F78029D7253E00B4DE0E /* RemindersCoordinator.swift in Sources */,
+				AD3BD44429D24A87000C001F /* TimerModel.swift in Sources */,
+				AD754A8329D37C9C0096D43C /* UIControl+Combine.swift in Sources */,
+				AD8AC82129D84DB400550C50 /* MainCoordinatorFactory.swift in Sources */,
+				AD3BD44A29D24B12000C001F /* RemindersStore.swift in Sources */,
+				ADC7F77729D642CE00B4DE0E /* CoreDataHelpers.swift in Sources */,
+				AD00356229D0684F000F7EE0 /* WorldClockViewModel.swift in Sources */,
+				ADC7F77E29D7196B00B4DE0E /* MainAppDependencies.swift in Sources */,
+				AD8AC81829D84B0400550C50 /* TabItem+Clock.swift in Sources */,
+				AD3BD43429D2325A000C001F /* UIColor+Extras.swift in Sources */,
+				ADC7F77A29D70E3700B4DE0E /* Coordinator.swift in Sources */,
+				AD00357629D0BCCE000F7EE0 /* Clock+CoreDataProperties.swift in Sources */,
+				AD00355C29D066C6000F7EE0 /* RemindersViewController.swift in Sources */,
+				AD3BD45329D24DB6000C001F /* CoreData+ClocksStore.swift in Sources */,
+				AD00351129D06230000F7EE0 /* AppDelegate.swift in Sources */,
+				AD8AC81C29D84B6500550C50 /* TabItem+Timer.swift in Sources */,
+				AD8AC82529D882DB00550C50 /* TabBarCoordinator.swift in Sources */,
+				AD00351329D06230000F7EE0 /* SceneDelegate.swift in Sources */,
+				AD00357429D0BCCE000F7EE0 /* ReminderDB +CoreDataProperties.swift in Sources */,
+				AD754AA229D4C73C0096D43C /* CitiesListViewController.swift in Sources */,
+				AD00357129D0BCCE000F7EE0 /* TimerDB+CoreDataClass.swift in Sources */,
+				AD00357F29D0D733000F7EE0 /* UIFont+Extras.swift in Sources */,
+				AD3BD43029D22B53000C001F /* DatePickerView.swift in Sources */,
+				AD8AC81A29D84B3500550C50 /* TabItem+Reminders.swift in Sources */,
+				AD754A9129D4C3870096D43C /* City.swift in Sources */,
+				ADCB82CA29D5FCAC00782589 /* AddReminderViewModel.swift in Sources */,
+				ADC7F77C29D70F7B00B4DE0E /* MainCoordinator.swift in Sources */,
+				ADCB82D029D62EB600782589 /* CoreDataStore.swift in Sources */,
+				AD8AC83329D8B0BE00550C50 /* AlertManager.swift in Sources */,
+				AD00356029D06840000F7EE0 /* WorldClockViewController.swift in Sources */,
+				AD3BD44C29D24B56000C001F /* ClocksStore.swift in Sources */,
+				AD00357229D0BCCE000F7EE0 /* TimerDB+CoreDataProperties.swift in Sources */,
+				AD8AC84029DA1E2E00550C50 /* NotificationSchedulingManager.swift in Sources */,
+				AD754AA429D4C9910096D43C /* CityCell.swift in Sources */,
+				AD3BD44629D24A9A000C001F /* Reminder.swift in Sources */,
+				ADC7F78429D726B600B4DE0E /* TimerCoordinator.swift in Sources */,
+				AD3BD45129D24DA8000C001F /* CoreData+RemindersStore.swift in Sources */,
+				AD00354B29D062A7000F7EE0 /* TimerViewModel.swift in Sources */,
+				AD00358729D0DC1D000F7EE0 /* DefaultCellIdentifiable.swift in Sources */,
+				AD754A9F29D4C7250096D43C /* CitiesListViewModel.swift in Sources */,
+				ADCB82CC29D626B700782589 /* CitiesStore.swift in Sources */,
+				AD00351B29D06230000F7EE0 /* HugeClock.xcdatamodeld in Sources */,
+				AD8AC84229DA225400550C50 /* Date+Extras.swift in Sources */,
+				AD754A8C29D4AED80096D43C /* DateComponent.swift in Sources */,
+				ADC7F78229D726A200B4DE0E /* WorldClockCoordinator.swift in Sources */,
+				AD3BD44129D24A17000C001F /* TimersStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00352229D06239000F7EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA9D3C929DA9AF10006092D /* WorldClockStoreMockUp.swift in Sources */,
+				ADA9D3C729DA9A790006092D /* WorldClockViewModelTests.swift in Sources */,
+				AD8AC87329DA463F00550C50 /* TimerStoreMockup.swift in Sources */,
+				AD8AC8B329DA7C3E00550C50 /* RemindersViewModelTests.swift in Sources */,
+				ADA9D3C429DA90DA0006092D /* RemindersStoreMockUp.swift in Sources */,
+				AD8AC87029DA450000550C50 /* TimerViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD00352829D06239000F7EE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD00350C29D06230000F7EE0 /* HugeClock */;
+			targetProxy = AD00352729D06239000F7EE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD00351E29D06238000F7EE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD00351F29D06238000F7EE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD00353829D06239000F7EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD00353929D06239000F7EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD00353B29D06239000F7EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HugeClock/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = miguel.HugeClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AD00353C29D06239000F7EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HugeClock/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = miguel.HugeClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AD00353E29D06239000F7EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = miguel.HugeClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugeClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HugeClock";
+			};
+			name = Debug;
+		};
+		AD00353F29D06239000F7EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = miguel.HugeClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugeClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HugeClock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD00350829D06230000F7EE0 /* Build configuration list for PBXProject "HugeClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00353829D06239000F7EE0 /* Debug */,
+				AD00353929D06239000F7EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD00353A29D06239000F7EE0 /* Build configuration list for PBXNativeTarget "HugeClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00353B29D06239000F7EE0 /* Debug */,
+				AD00353C29D06239000F7EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD00353D29D06239000F7EE0 /* Build configuration list for PBXNativeTarget "HugeClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00353E29D06239000F7EE0 /* Debug */,
+				AD00353F29D06239000F7EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD00351929D06230000F7EE0 /* HugeClock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD00351A29D06230000F7EE0 /* HugeClock.xcdatamodel */,
+			);
+			currentVersion = AD00351A29D06230000F7EE0 /* HugeClock.xcdatamodel */;
+			path = HugeClock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD00350529D06230000F7EE0 /* Project object */;
+}
