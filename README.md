@@ -2,7 +2,7 @@
 iOS Test
 
 Thank you again for giving me the opportunity to work on this challenge. 
-The project is using MVVM architecture and is organised in Folders that could represent each Flow in its own Module. (E.g:
+The project is using MVVM-Coordinator architecture and is organised in Folders that could represent each Flow in its own Module. (E.g:
 clock module, timer module, reminders module)
 
 I also have used combine, and i'm aware that i might have not used it properly, but its my first time working with combine and learning the process.
